@@ -1,0 +1,20 @@
+#canvas
+{
+    border: 1px solid;
+    padding: 10px 0px 10px 0px;
+    box-shadow: 5px 10px rgba(192, 192, 192, 0.6);
+}
+header
+{
+    margin-bottom: 20px;
+}
+#timeout, #endToEnd {
+    max-width: 100%
+}
+#customRow {
+    display: none;
+}
+#customRow.show {
+    display: flex;
+    margin-top: 4px;
+}

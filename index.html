@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>TCP/IP Congestion Control</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
+        <link href="css/main.css" rel="stylesheet" />
+        <script type="module" src="js/main.js"></script>
+    </head>
+    <body>
+        <header class="container">
+            <div class="row">
+                <div class="col-md-12">
+                    <h2>TCP/IP Congestion Control</h2>
+                </div>
+                <label class="col-md-1 col-sm-2">Protocol</label>
+                <div class="col-md-1 col-sm-3">
+                    <select id="protocol"></select>
+                </div>
+                <label class="col-md-1 col-sm-2">Timeout</label>
+                <div class="col-md-1 col-sm-3">
+                    <input type="number" id="timeout" min="1000" max="30000" step="1000" value="3000" />
+                </div>
+                <label class="col-md-2 col-sm-4">End to End Delay</label>
+                <div class="col-md-2 col-sm-3">
+                    <input type="number" id="endToEnd" min="1000" max="20000" step="1000" value="2000" />
+                </div>
+                <label class="col-md-1 col-sm-2">Bandwidth</label>
+                <div class="col-md-1 col-sm-1">
+                    <select id="bandwidth">
+                        <option value="2">2</option>
+                        <option value="4">4</option>
+                        <option value="8">8</option>
+                        <option value="16">16</option>
+                    </select>
+                </div>
+                <div class="col-md-1">
+                    <button class="btn btn-primary" id="start">Start</button>
+                </div>
+            </div>
+            <div id="customRow" class="row">
+            </div>
+        </header>
+        <main class="container-fluid">
+            <div class="row">
+                <div class="col-md-12 text-center">
+                    <canvas id="canvas" width="810" height="400">If you see this text, you need to update your browser.</canvas>
+                </div>
+            </div>
+            <div class="row justify-content-center">
+                <div class="col-md-2">
+                    <b>Congestion Window:</b>
+                    <span id="congestionWindow"></span>
+                </div>
+                <div class="col-md-2">
+                    <b>Inflight Packets:</b>
+                    <span id="inflight"></span>
+                </div>
+            </div>
+        </main>
+    </body>
+</html>

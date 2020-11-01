@@ -8,7 +8,7 @@ The Web application is meant to help in the teaching of congestion control algor
 
 # Web Application Page
 
-You can try the Web application [here](https://christianhmeier.github.io/tcp-ip-canvas/), feel free 
+You can try the Web application [here](https://christianhmeier.github.io/tcp-ip-canvas/).
 
 # License
  Copyright (c) 2020 Christian H. Meier Martinez. Dual licensed under the [JSON License](https://json.org/license.html) and the [MIT License](https://opensource.org/licenses/MIT).
